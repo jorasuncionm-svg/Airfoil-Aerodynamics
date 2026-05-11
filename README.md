@@ -1,4 +1,4 @@
-# 2D Airfoil Aerodynamic Analysis & Inverse Design - Singularity Panel Method 🌀
+# 2D Airfoil Aerodynamic Analysis & Inverse Design - Singularity Panel Method 
 
 This repository contains a professional Python implementation of a **2D Singularity Panel Method Solver** developed for potential flow analysis and inverse aerodynamic design. The project models arbitrary 2D profiles (including sharp triangular shapes and curved **NACA 4-digit** geometries) by distributing constant-strength sources ($q_j$) to capture thickness effects and a global uniform vortex strength ($\gamma$) to model lift.
 
@@ -6,7 +6,7 @@ This project was developed within the 3rd-year Aerodynamics curriculum at the *U
 
 ---
 
-## 🚀 Key Features
+##  Key Features
 
 * **Advanced Singularity Modeling:** Combines constant-source distributions per panel with a global vortex sheet to compute lift, pressure distributions ($C_p$), and pitching moments.
 * **Kutta Condition Integration:** Solves the physical circulation around the profile by enforcing equal velocities at the upper and lower trailing edge panels.
@@ -17,7 +17,7 @@ This project was developed within the 3rd-year Aerodynamics curriculum at the *U
 
 ---
 
-## 📖 Physical & Mathematical Background
+##  Physical & Mathematical Background
 
 ### 1. No-Penetration Boundary Condition
 The potential solver imposes that the flow cannot penetrate the solid boundary at any control point $i$:
@@ -33,7 +33,7 @@ To close the system with $N+1$ equations, we enforce the physical trailing edge 
 
 ---
 
-## 📊 Performance Validation (NACA 3316 at $\alpha = 2.8^\circ$)
+##  Performance Validation (NACA 3316 at $\alpha = 2.8^\circ$)
 
 Our custom Python solver was strictly validated against inviscid **XFOIL** simulations using $N = 100$ panels:
 
@@ -51,7 +51,7 @@ A sweep starting from 40 panels with 20% increases proved that the convergence c
 
 ---
 
-## 🎯 Engineering Challenge: Inverse Design
+##  Engineering Challenge: Inverse Design
 
 The goal was to modify the base **NACA 3316** ($f=3.0\%, x_f=30\%, t=16\%$) to achieve a lift increment of **$\Delta C_l = +0.2$ at $\alpha = 0^\circ$** while strictly minimizing pitching moment penalties ($\Delta C_m \approx 0$).
 
