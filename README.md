@@ -45,10 +45,6 @@ Our custom Python solver was strictly validated against inviscid **XFOIL** simul
 ### Numerical Convergence Study
 A sweep starting from 40 panels with 20% increases proved that the convergence criterion ($\epsilon_{Cl} < 1.0\%$) was reached at **$N_{opt} = 84$ panels** ($\epsilon = 0.52\%$):
 
-<p align="center">
-  <img src="images/convergence_study.png" width="550" alt="Convergence of Cl vs Panel Count">
-</p>
-
 ---
 
 ##  Engineering Challenge: Inverse Design
